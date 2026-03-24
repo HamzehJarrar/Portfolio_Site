@@ -1,26 +1,34 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./styles/global.css";
 
-function App() {
+import Navbar from "./components/Navbar";
+import StarsBackground from "./components/StarsBackground";
+
+import Hero from "./sections/Hero";
+import About from "./sections/About";
+import Skills from "./sections/Skills";
+import Projects from "./sections/Projects";
+import Training from "./sections/Training";
+import Contact from "./sections/Contact";
+
+const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <StarsBackground />
+      <Navbar />
+      <main>
+        <Hero />
+        <About />
+        <Skills />
+        <Projects />
+        <Training />
+        <Contact />
+      </main>
+      <footer>
+        <span>Built with ♥ · Hamzeh Jarrar · Palestine 🇵🇸</span>
+      </footer>
+    </>
   );
-}
+};
 
 export default App;
