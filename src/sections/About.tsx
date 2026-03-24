@@ -46,9 +46,9 @@ const About: React.FC = () => {
         </div>
         <div className="about-stats">
           {[
-            { num: "2", label: "Projects Built" },
-            { num: "200+", label: "Training Hours" },
-            { num: "C1", label: "English Level" },
+            { num: "11", label: "Projects Built" },
+            { num: "500+", label: "Training Hours" },
+            { num: "B1", label: "English Level" },
             { num: "CS", label: "BSc Degree" },
           ].map(({ num, label }) => (
             <div className="stat-card" key={label}>
