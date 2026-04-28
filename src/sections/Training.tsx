@@ -7,14 +7,25 @@ const trainings = [
     org: "Gaza Sky Geeks — HTML, CSS, JavaScript · Responsive UI",
   },
   {
+    hours: "60",
+    name: "AI & Machine Learning",
+    org: "Gaza Sky Geeks — Python · Data preprocessing · Model implementation",
+  },
+  {
     hours: "80",
     name: "Node.js Development",
     org: "RESTful APIs · Server-side logic · Backend fundamentals",
   },
+
   {
-    hours: "60",
+    hours: "150",
     name: "AI & Machine Learning",
-    org: "Gaza Sky Geeks — Python · Data preprocessing · Model implementation",
+    org: "Hassib Sabbagh IT Center of Excellence (HSITCE)",
+  },
+  {
+    hours: "200",
+    name: "Backend Development",
+    org: "Foothill Technology Solutions, LLC. ",
   },
 ];
 
@@ -30,7 +41,7 @@ const Training: React.FC = () => {
           }
         });
       },
-      { threshold: 0.12 }
+      { threshold: 0.12 },
     );
     const reveals = ref.current?.querySelectorAll(".reveal") ?? [];
     reveals.forEach((el) => observer.observe(el));

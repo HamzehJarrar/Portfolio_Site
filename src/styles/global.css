@@ -159,6 +159,7 @@ h1 span { color: var(--accent); }
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
+  align-items: center;
   opacity: 0;
   animation: fadeUp 0.8s 0.8s forwards;
 }
@@ -589,4 +590,24 @@ footer {
 
   /* Footer */
   footer { font-size: 0.72rem; padding: 1.2rem 1rem; }
+}
+.github-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  color: var(--muted);
+  background: transparent;
+  transition: all 0.3s ease;
+  font-size: 1.2rem;
+}
+
+.github-btn:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  box-shadow: 0 0 15px var(--glow);
+  transform: translateY(-2px);
 }
