@@ -4,39 +4,37 @@ const Hero: React.FC = () => {
     <section id="hero">
       <div className="hero-inner">
         <div className="hero-content">
-          <div className="hero-label">available for opportunities</div>
+          <div className="hero-label">hello, i'm hamzeh</div>
 
           <h1>
-            Hamzeh <br /> <span>Jarrar</span>
+            Frontend Developer <span>&amp; AI Enthusiast</span>
           </h1>
 
           <p className="hero-sub">
-            Junior Full Stack Developer crafting responsive, modern interfaces
-            with React.js — and growing into backend with Node.js & beyond.
+            I build modern web experiences where design, code, and AI come together.
           </p>
 
           <div className="hero-ctas">
             <a href="#projects" className="btn btn-primary">
-              View Projects
+              View Projects <span aria-hidden="true">↗</span>
             </a>
 
             <a
               href="mailto:hamzehjarrar604@gmail.com"
               className="btn btn-ghost"
             >
-              Get In Touch
+              Let&apos;s Connect <span aria-hidden="true">↗</span>
             </a>
 
             <a
               href="https://drive.google.com/file/d/1CCdZ7vo-_Qm7jvaIQ0jcdH_mg266KEvj/preview"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn btn-primary"
+              className="btn btn-ghost"
             >
-              View CV
+              View CV <span aria-hidden="true">↗</span>
             </a>
 
-            {/* GitHub Icon */}
             <a
               href="https://github.com/HamzehJarrar"
               target="_blank"
@@ -60,8 +58,12 @@ const Hero: React.FC = () => {
           </div>
         </div>
 
-        <div className="hero-photo-wrap">
-          <div className="hero-photo-glow" />
+        <div className="hero-visual" aria-hidden="true">
+          <div className="hero-orbit hero-orbit-one" />
+          <div className="hero-orbit hero-orbit-two" />
+          <div className="hero-orbit-core" />
+          <div className="hero-orbit-dot hero-orbit-dot-one" />
+          <div className="hero-orbit-dot hero-orbit-dot-two" />
           <img src="/hamzeh.jpg" alt="Hamzeh Jarrar" className="hero-photo" />
         </div>
       </div>

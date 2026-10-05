@@ -3,6 +3,7 @@ import "./styles/global.css";
 
 import Navbar from "./components/Navbar";
 import StarsBackground from "./components/StarsBackground";
+import LaunchIntro from "./components/LaunchIntro";
 
 import Hero from "./sections/Hero";
 import About from "./sections/About";
@@ -15,6 +16,7 @@ const App: React.FC = () => {
   return (
     <>
       <StarsBackground />
+      <LaunchIntro />
       <Navbar />
       <main>
         <Hero />
