@@ -10,7 +10,7 @@ export const skillGroups: SkillGroup[] = [
     title: "Frontend",
     tags: [
       "React.js",
-      "Nextjs"
+      "Nextjs",
       "JavaScript (ES6+)",
       "TypeScript",
       "HTML5",
